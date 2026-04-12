@@ -522,13 +522,8 @@ class OpenAlexNeuroscienceReview:
         # FIGURE 1 : Stacked Bar Chart (Nombre d'articles par année et catégorie)
         # ═════════════════════════════════════════════════════════════════════════
         
-        # Préparer les données
-        #df = df[df['sharing_category'] != 'neither'] #si je reveux avec tous les articles enlever cette ligne et remetre df en bas
-        # yearly_counts = pd.crosstab(
-        #     df_sharing['publication_year'], 
-        #     df_sharing['sharing_category'],
-        #     margins=False
-        # )
+        # Preparing data 
+        #df = df[df['sharing_category'] != 'neither'] #if you want to just show sharing articles in the bar graph 
         
         yearly_counts = pd.crosstab(
              df['publication_year'], 
@@ -536,7 +531,8 @@ class OpenAlexNeuroscienceReview:
              margins=False
          )
         category_order = ['code_and_data', 'code_only', 'data_only','neither']
-        #category_order = ['code_and_data', 'code_only', 'data_only'] #, 'neither']
+        #category_order = ['code_and_data', 'code_only', 'data_only'] #if you want to just show sharing articles in the bar graph 
+        
         yearly_counts = yearly_counts[category_order]
         
         # Golden ratio : 6.4 × 4 pouces ≈ 16 × 10 cm (standard colonne simple)
@@ -563,7 +559,8 @@ class OpenAlexNeuroscienceReview:
         # Légende repositionnée et étiquettes claires
         ax1.legend(
             title='Sharing category',
-            labels=['Code + Data', 'Code only', 'Data only', 'Neither'],
+            labels=['Code + Data', 'Code only', 'Data only', 'Neither'], 
+            #labels=['Code + Data', 'Code only', 'Data only'], #if you want to just show sharing articles in the bar graph 
             loc='upper left',
             frameon=True,
             edgecolor='#cccccc',
