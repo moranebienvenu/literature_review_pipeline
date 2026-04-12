@@ -758,4 +758,4 @@ if __name__ == "__main__":
     thread.start()
  
     # Launch Gradio interface
-    demo.launch()
+    demo.launch(share=True)
