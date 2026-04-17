@@ -2,7 +2,7 @@
 
 A two-step pipeline to analyze reproducibility practices in the neuroscience literature: data collection via the OpenAlex API, followed by semantic clustering on Hugging Face Spaces.
 
-Adapted from **Karakuzu et al. (2024) — "Reproducible Research Practices in Magnetic Resonance Neuroimaging"** ([DOI: 10.55458/neurolibre.00021](https://doi.org/10.55458/neurolibre.00021)).
+Adapted from **Karakuzu et al. (2025) — "Reproducible Research Practices in Magnetic Resonance Neuroimaging"** ([DOI: 10.55458/neurolibre.00021](https://doi.org/10.55458/neurolibre.00021)).
 
 ---
 
