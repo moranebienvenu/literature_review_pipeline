@@ -123,7 +123,7 @@ In your HF Space settings (Settings → Secrets), add:
 
 ### Result persistence
 
-The computed SPECTER2 embeddings are **saved to the HF repo** (`specter2_embeddings.npy`). On the next run, this step is skipped — only clustering and naming are re-executed. This avoids recomputing 2–3 hours of encoding on every run.
+The computed SPECTER2 embeddings are **saved to the HF repo** (`specter2_embeddings.npy`). On the next run, this step is skipped — only clustering and labeling are re-executed. This avoids recomputing 2–3 hours of encoding on every run, in case you want to modify the prompt sent to Claude.
 
 ### Customizing cluster names (Claude prompt)
 
