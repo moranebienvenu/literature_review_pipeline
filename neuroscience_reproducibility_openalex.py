@@ -60,7 +60,7 @@ class OpenAlexNeuroscienceReview:
     #         "publication_year:2015-2025",
     #         "type:article",
     #         "is_oa:true",                # Open Access only
-    #         "concepts.id:C41008148",   # Computer science
+    #         "concepts.id:C169760540",   # Neuroscience
     #         'title_and_abstract.search:(brain  OR neuroscience )', #OR  neural
     #         #'title_and_abstract.search:(reproducible OR reproducibility OR "data sharing" OR "code sharing" OR github OR repository OR "data availability" OR "code availability" OR "supplementary data" OR "shared dataset")'
 
