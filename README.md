@@ -54,7 +54,7 @@ filters = [
     f"publication_year:{year}",
     "type:article",
     "is_oa:true",                              # Open Access only
-    "concepts.id:C41008148",                   # OpenAlex concept: Neuroscience
+    "concepts.id:C169760540",                   # OpenAlex concept: Neuroscience
     'title_and_abstract.search:(brain OR neuroscience)'  # ← edit here
 ]
 ```
